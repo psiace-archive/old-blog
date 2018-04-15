@@ -1,0 +1,7 @@
+# careers section data
+# if you don't have language feature(language.yml is empty), ignore "i18n" items
+
+- name: GNU Chinese Translators Team
+  link: https://savannah.gnu.org/projects/www-zh-cn/
+  date: 2018 - <i class="fa fa-clock-o" aria-hidden="true" title="Until Now"></i>
+  job: Member

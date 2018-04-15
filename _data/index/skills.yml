@@ -1,0 +1,6 @@
+# skills section data
+
+label: Ability
+id : cs
+aspects: Motivation, GitHub, C/C++, HTML/CSS, Linux, Python
+percentage: 85, 65, 70, 60, 50, 55

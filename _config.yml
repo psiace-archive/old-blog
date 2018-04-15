@@ -1,0 +1,68 @@
+#
+###################################
+# Site wide configuration
+####################################
+#
+title: PsiACE.Me
+email: PsiACE@Outlook.com
+description: A Personal Blog, Resume & Projects' Presentation.
+url: http://PsiACE.Me # the base hostname & protocol for your site
+keywords: ["Programming", "Computer Science", "blog"]
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Asia/Shanghai
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year-:month/:title
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: PsiACE
+  avatar: PsiACE-logo.png
+  job: "Fizz-Buzz Developer"
+  bio: "Life is short, so why not do something you like?"
+  email: PsiACE@Outlook.com
+  disqus-shortname: PsiACE
+  twitter: ace_psi #username
+  facebook: #username
+  google:
+    plus: #username
+    analytics: UA-113862515-1
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: PsiACE
+  gitlab: #username
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: PsiACE
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username
+  telegram: #username
