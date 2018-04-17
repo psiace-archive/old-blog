@@ -24,4 +24,8 @@
     </ul>
   </nav>
   {% include social-links.html %}
+  {% if author.paypal %}
+    <a herf="https://www.paypal.me/PsiACE"><img src="http://psiace.me/img/donate.png" height="128" width="128"></a>
+   <span class="author_bio mbm">If you feel that my work has helped you, consider sponsoring me on <b>Paypal</b></span>
+   {% endif %}
 </div>
