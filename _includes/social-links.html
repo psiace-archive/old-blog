@@ -41,3 +41,8 @@
     {% if author.orcid %}<li><a href="https://orcid.org/{{ author.orcid }}" class="social-link-item" target="_blank"><i class="fa fa-fw fa-id-card"></i></a></li>{% endif %}
   </ul>
 </div>
+
+{% if author.paypal %}
+          <a herf="https://www.paypal.me/PsiACE" class="social-link-item" target="_blank> <img src="http://psiace.me/img/donate.png" height="128" width="128"> </a>
+          <p>If you feel that my work has helped you, consider sponsoring me on <b>Paypal</b></p>
+{% endif %}
