@@ -40,6 +40,12 @@ layout: default
   
   <article class="post-content">
     {{ content }}
+    {% if site.owner.paypal %}
+    <a rel="donate" href="https://www.paypal.me/PsiACE"><img alt="Donate" style="border-width:0 height:96px width:96px" src="http://psiace.me/img/donate.png" /></a><br />If you feel that my work has helped you, consider <a rel="donate" href="https://www.paypal.me/PsiACE">sponsoring me on Paypal</a>.
+    {% endif %}
+    {% if page.creativecommons == true %}
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+    {% endif %}
   </article>
 </div>
 

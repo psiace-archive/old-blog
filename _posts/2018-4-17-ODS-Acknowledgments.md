@@ -4,6 +4,7 @@ title: 开放数据结构 · 致谢
 excerpt: 本章为Open Data Structures的Acknowledgment部分
 categories: [Open Data Structure 中译版]
 tags: [ODS, 数据结构与算法, 译作]
+creativecommons: true
 comments: true
 ---
 
@@ -21,3 +22,5 @@ comments: true
 同样感谢我的授课教师们，他们不止一次强调数据结构和算法的重要性。
 
 特别地感谢将要和正在阅读本书的朋友，您的分享和建议尤为重要。
+
+---
