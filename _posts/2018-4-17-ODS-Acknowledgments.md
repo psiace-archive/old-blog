@@ -1,8 +1,9 @@
 ---
 layout: post
 title: 开放数据结构 · 致谢
+excerpt: 本章为Open Data Structures的Acknowledgment部分
 categories: [Open Data Structure 中译版]
-tags: [ODS, 数据结构与算法，译作]
+tags: [ODS, 数据结构与算法, 译作]
 comments: true
 ---
 
