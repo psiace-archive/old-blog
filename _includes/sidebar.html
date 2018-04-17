@@ -24,4 +24,10 @@
     </ul>
   </nav>
   {% include social-links.html %}
+  <p class="author_job">Current work</p>
+  <div class="timeline" id="timeline">
+    {% for work in site.data.index.work %}
+          <div class="archive-title"><div class="archive-year"><strong>{{ work.date }}</strong> {{ work.content }} @ <a href="{{ work.link }}">{{ work.name }}</a></div></div>
+    {% endfor %}
+  </div>
 </div>
