@@ -62,18 +62,9 @@ layout: default
       <a href="https://www.reddit.com/submit?url={{ site.url }}{{ page.url }}" class="reddit btn" title="Share on Reddit"><i class="fa fa-reddit"></i><span> Reddit</span></a>
     </li>
   </ul>
-</div><!-- end share-buttons -->
-
-{% if author.paypal %}
-<p>If you feel that my work has helped you, consider sponsoring me on <b>Paypal</b></p>
- <a  target="_blank"><img src="http://psiace.me/img/donate.png" height="128" width="128" herf="https://www.paypal.me/PsiACE"/></a>
-{% endif %}
-
-{% if site.owner.disqus-shortname and page.comments == true %}
-<div id="disqus_thread"></div>
-{% include disqus.html %}
-{% endif %}
+</div><!-- end share-buttons-->
 
 {% if site.owner.livere-shortname and page.comments == true %}
+<div id="disqus_thread"></div>
 {% include livere.html %}
 {% endif %}
