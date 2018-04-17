@@ -57,6 +57,15 @@ layout: default
       {% endif %}
     </div><!-- /.image-wrap -->
     {% endif %}
-
+    
+    {% if post.tags.size > 0 %}
+    {% for cat in post.tags %}
+        <a class="btn" href="{{ site.url }}/tags/#{{ cat }}">{{ cat }}</a>
+        {% unless forloop.last %}
+        <span> • </span>
+        {% endunless %}
+      {% endfor %}
+      {% endif %}
+      
 </section>
 {% endfor %}
