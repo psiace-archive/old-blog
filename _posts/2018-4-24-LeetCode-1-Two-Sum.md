@@ -2,7 +2,7 @@
 layout: post
 title: LeetCode 1. Two Sum
 categories: [LeetCode题解]
-tags: [数据结构与算法, 题解, LeetCode]
+tags: [数据结构与算法, 题解, LeetCode简单题]
 creativecommons: true
 comments: true
 ---
@@ -19,13 +19,6 @@ comments: true
 
 因为 nums[0] + nums[1] = 2 + 7 = 9
 所以返回 [0, 1]
-```
-
-### 输入：
-
-```
-[2,7,11,15]
-9
 ```
 
 ### 分析：
