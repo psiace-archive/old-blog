@@ -1,6 +1,6 @@
 ---
 layout: post
-title: LeetCode 2. Reverse Integer
+title: LeetCode 7. Reverse Integer
 categories: [LeetCode题解]
 tags: [数据结构与算法, 题解, LeetCode简单题]
 creativecommons: true
