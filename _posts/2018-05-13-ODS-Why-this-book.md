@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 开放数据结构 · 为什么选择这本书？
-excerpt: 本章给出了选择Open Data Structure的理由，最为重要的一点是，本书是免费且自由的。
+excerpt: 本章给出了选择Open Data Structures的理由，最为重要的一点是，本书是免费且自由的。
 categories: [Open Data Structure 中译版]
 tags: [ODS, 数据结构与算法, 译作]
 creativecommons: true
