@@ -20,7 +20,7 @@ image:
 
 本文会介绍以下几个方面的内容：
 * 本地部署 Jekyll/GitHub Pages 环境
-* 为你的储存库启用 GitHub Pages 服务
+* 启用 GitHub Pages 的用户页面服务
 * 使用优秀的 Jekyll Theme
 * Jekyll Theme 的组织结构
 * 一些第三方服务和个性化配置
@@ -56,6 +56,17 @@ image:
 ![Test Page](https://psiace.me/src/FeiDianShare/test-page.png)
 
 如果你喜欢它，可以直接在这个上开始工作，打开文件夹，在 `_post` 目录下以 `yyyy-mm-dd-title.md` 按示例新建文件，编辑内容，然后就可以在页面上看到更改了，稍后我会额外介绍这些内容。
+
+
+### 启用 GitHub Pages 的用户页面服务
+
+如果你还没有 [GitHub](https://github.com) 的账号，我强烈推荐你注册一个，因为这是世界上最为活跃的~~同性~~交友社区之一 :) 只要访问主页，你就可以找到入口。
+
+我强烈建议你参考 GitHub 的官方文档，它非常详细地介绍了所有你可能想要了解的内容。当然，你需要一点阅读英文文档的能力，至少要能够使用翻译。
+
+好了，现在你已经有了 GitHub 的账号，通常情况下，我会建议你创建一个名为 `yourusername.github.io` 的存储库（请容许它使用 README 文档对存储库进行初始化，特别是当你打算试验而没有准备好内容），这样你就可以获得一个由 GitHub 友情提供的子域名，所有在主分支（`master`）的符合要求的内容都将被重构并发布，通常情况下，你可以在浏览器访问 `https://yourusername.github.io`，然后看到 `README.md` 被转化后的内容。
+
+如果它没有正常显示或者你想在其它存储库启用 GitHub Pages，请打开存储库的 `Settings` 然后根据提示操作。如果你觉得页面光秃秃，可以通过 `Choose a theme` 来选择一个官方主题，但这不是必要的，因为我们接下来会介绍一些关于使用优秀的 Jekyll 主题和进一步定制的内容。
 
 （未完待续...）
 
