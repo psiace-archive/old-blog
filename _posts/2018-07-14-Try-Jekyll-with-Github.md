@@ -43,6 +43,19 @@ image:
 
 如果你在使用 Windows 或是其它操作系统，请参考[这里](https://www.ruby-lang.org)，链接指向了 Ruby 的官方网站，你可以很轻易得到安装办法。
 
-接下来，按照
+接下来，我们需要依次执行下面图示的命令：
 
+![Install & Test](https://psiace.me/src/FeiDianShare/carbon-install-test.png)
+
+不使用 `gem install bundler jekyll` 的原因只是我们想要构建一个与 Github Pages 完全相同的环境。
+
+在浏览器中输入它提供的地址（也许是 `http://localhost:4000` 或是 `http://127.0.0.1:4000/`），你就可以看到一个官方提供的模板。
+
+类似下图：
+
+![Test Page](https://psiace.me/src/FeiDianShare/test-page.png)
+
+如果你喜欢它，可以直接在这个上开始工作，打开文件夹，在 `_post` 目录下以 `yyyy-mm-dd-title.md` 按示例新建文件，编辑内容，然后就可以在页面上看到更改了，稍后我会额外介绍这些内容。
+
+（未完待续...）
 
