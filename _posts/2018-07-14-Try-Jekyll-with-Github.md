@@ -68,5 +68,33 @@ image:
 
 如果它没有正常显示或者你想在其它存储库启用 GitHub Pages，请打开存储库的 `Settings` 然后根据提示操作。如果你觉得页面光秃秃，可以通过 `Choose a theme` 来选择一个官方主题，但这不是必要的，因为我们接下来会介绍一些关于使用优秀的 Jekyll 主题和进一步定制的内容。
 
+### 使用优秀的 Jekyll Theme
+
+造轮子是一件有意思的工作，但它往往需要花费大量的时间，而且一个好的想法可能需要经过大量的调试才能正常工作，如果你不满足于 Jekyll 的几个默认主题，那么我建议你试着使用一些优秀的 Jekyll 主题，它们往往实现了以下功能：
+
+* 响应式布局
+* 良好的文件结构
+* 标签云/文章分类
+* 优化的 SEO 设置
+* 第三方评论/统计插件支持
+
+从优秀的 Jekyll 主题开始可以让你更专注于文章本身，而不是看上去数目众多的 CSS 代码 :)
+
+这里我特别推荐三个主题：
+
+* **[Huxblog-Boilerplate](https://github.com/Huxpro/huxblog-boilerplate)**，by [@Huxpro](https://github.com/Huxpro/)，Apache License v2.0
+
+![Huxblog](https://psiace.me/src/FeiDianShare/Huxblog.png)
+
+* **[Jekyll NexT](https://github.com/Simpleyyt/jekyll-theme-next)**，by [@Simpleyyt](https://github.com/Simpleyyt/)
+
+![NexT](https://psiace.me/src/FeiDianShare/NexT.png)
+
+* **[Leonids](https://github.com/renyuanz/leonids)**，by [@renyuanz](https://github.com/renyuanz/)
+
+![Leonids](https://psiace.me/src/FeiDianShare/leonids.png)
+
+如果你想
+
 （未完待续...）
 
