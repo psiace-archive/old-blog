@@ -86,15 +86,19 @@ image:
 
 ![Huxblog](https://psiace.me/src/FeiDianShare/Huxblog.png)
 
-* **[Jekyll NexT](https://github.com/Simpleyyt/jekyll-theme-next)**，by [@Simpleyyt](https://github.com/Simpleyyt/)
+* **[Jekyll NexT](https://github.com/Simpleyyt/jekyll-theme-next)**，by [@Simpleyyt](https://github.com/Simpleyyt/)，Unknow
 
 ![NexT](https://psiace.me/src/FeiDianShare/NexT.png)
 
-* **[Leonids](https://github.com/renyuanz/leonids)**，by [@renyuanz](https://github.com/renyuanz/)
+* **[Leonids](https://github.com/renyuanz/leonids)**，by [@renyuanz](https://github.com/renyuanz/)，MIT License
 
 ![Leonids](https://psiace.me/src/FeiDianShare/leonids.png)
 
-如果你想
+点击主题名，你将跳转到它们的存储库，请选择你所喜欢的主题下载
+
+相信我，我们可以完全避开 Git 以及它的命令行工具，如果你不想跳过这些，那么你可能需要另外查看其它文章，我暂时没有介绍这些的计划。
+
+如果你想查找更多主题，我强烈建议你查看 [Jekyll Theme](http://jekyllthemes.org)，请从中挑选你喜欢的那个。
 
 （未完待续...）
 
