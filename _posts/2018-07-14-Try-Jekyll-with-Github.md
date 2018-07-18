@@ -173,5 +173,111 @@ image:
 
 我会在下一部分结合实例来讲一下各个部分的使用。
 
-（未完待续...）
+### 一些第三方服务和个性化配置
+
+#### 常规
+
+用你最喜爱的文本编辑器打开你的 Jekyll Theme，首先我们需要编辑 `_config.yml` 文件，通常情况下，它会包含一些网站所必须的 SEO 信息，以及你一些个人信息，按照你的情况把它填好，如果里面没有你所需要的内容请留空。社交链接和默认的第三方服务通常是在这里进行配置。
+
+哦，我想我们不需要那些为了展示而配备的文章，如果你恰恰和我一样使用 `Fedora with Gnome` （我只是不确定其它系统的情况）我建议你将它们移动到 `模板` 文件夹中，这样你就可以按它的格式新建文章。
+
+让我们来看一下用于文章的 `.markdown(.md)` 文件与平时有什么不同，这里给出一个示例：
+
+    ---
+    title: Elements
+    description: Markdown-How-To
+    date: 2013-12-24 23:29:08
+    categories:
+      - Foo
+    tags:
+    ---
+
+    The purpose of this post is to help you make sure all of HTML elements can display properly. If you use CSS reset, don't forget to redefine the style by yourself.
+
+    ---
+
+    # Heading 1
+
+    ## Heading 2
+
+    ### Heading 3
+
+    #### Heading 4
+
+    ##### Heading 5
+
+    ###### Heading 6
+
+    ---
+
+    ## Paragraph
+
+    Lorem ipsum dolor sit amet, [test link]() consectetur adipiscing elit. **Strong text** pellentesque ligula commodo viverra vehicula. *Italic text* at ullamcorper enim. Morbi a euismod nibh. <u>Underline text</u> non elit nisl. ~~Deleted text~~ tristique, sem id condimentum tempus, metus lectus venenatis mauris, sit amet semper lorem felis a eros. Fusce egestas nibh at sagittis auctor. Sed ultricies ac arcu quis molestie. Donec dapibus nunc in nibh egestas, vitae volutpat sem iaculis. Curabitur sem tellus, elementum nec quam id, fermentum laoreet mi. Ut mollis ullamcorper turpis, vitae facilisis velit ultricies sit amet. Etiam laoreet dui odio, id tempus justo tincidunt id. Phasellus scelerisque nunc sed nunc ultricies accumsan.
+
+    Interdum et malesuada fames ac ante ipsum primis in faucibus. `Sed erat diam`, blandit eget felis aliquam, rhoncus varius urna. Donec tellus sapien, sodales eget ante vitae, feugiat ullamcorper urna. Praesent auctor dui vitae dapibus eleifend. Proin viverra mollis neque, ut ullamcorper elit posuere eget.
+
+    > Praesent diam elit, interdum ut pulvinar placerat, imperdiet at magna.
+
+    Maecenas ornare arcu at mi suscipit, non molestie tortor ultrices. Aenean convallis, diam et congue ultricies, erat magna tincidunt orci, pulvinar posuere mi sapien ac magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent vitae placerat mauris. Nullam laoreet ante posuere tortor blandit auctor. Sed id ligula volutpat leo consequat placerat. Mauris fermentum dolor sed augue malesuada sollicitudin. Vivamus ultrices nunc felis, quis viverra orci eleifend ut. Donec et quam id urna cursus posuere. Donec elementum scelerisque laoreet.
+
+    ## List Types
+
+    ### Definition List (dl)
+
+    <dl><dt>Definition List Title</dt><dd>This is a definition list division.</dd></dl>
+
+    ### Ordered List (ol)
+
+    1. List Item 1
+    2. List Item 2
+    3. List Item 3
+
+    ### Unordered List (ul)
+
+    - List Item 1
+    - List Item 2
+    - List Item 3
+
+    ## Table
+
+    | Table Header 1 | Table Header 2 | Table Header 3 |
+    | --- | --- | --- |
+    | Division 1 | Division 2 | Division 3 |
+    | Division 1 | Division 2 | Division 3 |
+    | Division 1 | Division 2 | Division 3 |
+
+    ## Misc Stuff - abbr, acronym, sub, sup, etc.
+
+    Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. <cite>cite</cite>. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <acronym title="National Basketball Association">NBA</acronym> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  <abbr title="Avenue">AVE</abbr>
+
+
+此文章来自 NexT 主题，介绍了基本的 Markdown 用法，你可以对照页面来看，最前面被一组 `---` 包围的内容属于 YML，包含了文档的信息：标题，描述，分类，标签，日期；我建议你为每篇文章添加这些内容来记录。
+
+你可能还需要修改关于介绍博主的内容，一部分主题会在 `_config.yml` 中进行集成，还有一部分主题会包含一个名为 `about/resume` 的文档，请把里面的内容换成你自己的。还有一种会使用 `_data` 文件夹内的数据或是引入 `_include` 文件夹中的内容，也同样请你修改它们，语法很简单，不做赘述。
+
+这样你就可以把信息完全替换成你自己的，但我建议你保留页脚的部分信息，该内容通常会申明你使用的是什么主题。
+
+#### 第三方服务
+
+啊哦，其实我有点担心是不是描述的足够清楚，如果有什么疑问的话请直接联系我。这一部分会介绍到如何加入第三方服务。
+
+来看看我们需要哪些第三方服务：
+
+1. 评论
+    - 多说
+    - Disqus
+    - 来必力
+2. 统计/SEO
+    - 百度
+    - 谷歌
+
+这里以 来必力 和 谷歌分析 为例，选用这两个的原因只是因为方便，你可以自由选择适合你情况的服务。
+
+
+
+
+
+
+（未完待续...)
+ 
 
