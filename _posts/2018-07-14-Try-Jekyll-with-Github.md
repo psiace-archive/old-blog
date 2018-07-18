@@ -248,7 +248,7 @@ image:
 
     ## Misc Stuff - abbr, acronym, sub, sup, etc.
 
-    Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. <cite>cite</cite>. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <acronym title="National Basketball Association">NBA</acronym> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  <abbr title="Avenue">AVE</abbr>
+    Lorem <sup>superscript</sup> dolor <sub>subscr被咯个ipt</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. <cite>cite</cite>. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. <acronym title="National Basketball Association">NBA</acronym> Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.  <abbr title="Avenue">AVE</abbr>
 
 
 此文章来自 NexT 主题，介绍了基本的 Markdown 用法，你可以对照页面来看，最前面被一组 `---` 包围的内容属于 YML，包含了文档的信息：标题，描述，分类，标签，日期；我建议你为每篇文章添加这些内容来记录。
@@ -273,11 +273,46 @@ image:
 
 这里以 来必力 和 谷歌分析 为例，选用这两个的原因只是因为方便，你可以自由选择适合你情况的服务。
 
+##### 启用谷歌分析插件
 
+先说 谷歌分析 吧，它通常在各个主题之中都有良好的支持，你需要的只是填入它提供的 ID，当然，你需要一个独立的域名来做这件事，还需要番茄 :( 如果你想要使用百度分析，可能需要为域名进行备案，此外，百度的搜索引擎似乎是在 GitHub 的黑名单上。
 
+我这里默认你已经有了域名，也做了番茄，如果你需要注册域名，腾讯阿里都可以提供服务。
 
+打开 Google Analytics，按照提示进行操作，在执行完所有步骤之后，你会得到一个类似 `xx-xxxx-xxxx` 的字符串，如果没有，请从给出的 Javascript 代码中把它找出来，复制粘贴到 `_config.yml` 中合适的位置。
 
+很简单不是吗？以这个为例子主要是为了展示它的运作模式，所以让我们来看一下它是如何工作的，这里以 Huxblog 为例：
 
-（未完待续...)
+![Huxblog GA Track](https://psiace.me/src/FeiDianShare/ga-track.png)
+
+代码中的 `{% raw %}{% if site.ga_track_id %}...{{ site.ga_track_id }}...{{ site.ga_domain }}...{% endif %}{% endraw %}` 会先检查你在 `_config.yml` 中是否填写了 `ga_track_id` 然后把对应的 id 和 domain 填入位置。
+
+这段代码位于 `_include/footer.html`，在 Huxblog 中，你可以在 `_layout/default.html` 找到 `{% raw %}{% include footer.html %}{% endraw %}` 这个语句使我们可以把 footer.html 包含在页面中。
+
+##### 安装来必力评论插件
+
+我知道这个第三方评论很少见，但鉴于天朝的环境，如果你想和小伙伴愉快发言，可以考虑一下。
+
+打开 livere.com 按流程注册安装（我不想过多的描述这些没有意义的内容），你会得到一段 js 代码。
+
+- 如果你只打算自己用，请直接把它粘贴到 `_layout/post.html` 中合适的位置。通常这是对应你博文所使用的模板。
+
+- 如果你打算把它做成插件，我建议你在 `_include` 中新建一个 `livere.html` 然后把它粘贴进去，将 `data-uid` 后面引号的内容换成 `{% raw %}{{ site.livere_uid }}{% endraw %}`，然后在 `_config.yml` 中合适的位置新建一行 `livere_uid: <your-data-uid>`，在 `_layout/post.html` 中添加 `{% raw %}{% if site.livere_uid %}{{ include livere.html }}{% endif %}{% endraw %}`。
+
+- 如果你想要通过博客的 `markdown` 文件中的信息头来控制，请按 `{% raw %}{% if page.comments == true %}{% if site.livere_uid %}{{ include livere.html }}{% endif %}{% endif %}{% endraw %}` 的样式添加到 `post.html` 中，这样，你只需要在博文信息头中加入 `comments: true` 就可以使它正常工作。
+
+**本来打算再讲一些其它的内容，一想我拖的时间有些长，而方法都大同小异，以后有需要再补**
+
+### 将你的页面发布 :)
+
+本地预览确实很没意思，毕竟只是自娱自乐，还是早点发布比较好，你也不用再在我这里花费更多的时间了。
+
+相信你应该还找得到你在开始创建的 `yourusername.github.io` 存储库，现在我们要把你本地的 `your-jekyll-theme` 中的内容上传到那里。
+
+一个很直接的方式就是点击存储库的 `Upload` 按钮，然后将内容统统拖拽进去。
+
+我觉得这已经足够你完成这项工作，享受你的博客吧。
+
+PS：如果我现在说你直接 `fork` 一个别人的主题存储库，然后把存储库的名字和内容进行修改就可以得到属于你的网站，你会不会打死我。
+
  
-
