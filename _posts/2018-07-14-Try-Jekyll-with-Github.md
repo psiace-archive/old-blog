@@ -3,7 +3,7 @@ layout: post
 title: 尝试使用 Jekyll 与 GitHub Pages
 excerpt: 本文章介绍一些关于 Jekyll 与 GitHub Pages 的内容，为了简化流程仅仅介绍如何快速开始以及在已有主题之上进行个性化定制。
 categories: [沸点分享记录]
-tags: [Jekyll, GitHub Pages, 静态站点生成器]
+tags: [Jekyll, GitHub Pages, 静态站点生成器, 沸点工作室]
 creativecommons: true
 comments: true
 image:
