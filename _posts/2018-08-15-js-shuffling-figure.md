@@ -3,6 +3,7 @@ layout: post
 title: Javascript 轮播图
 categories: [Javascript 练习]
 tags: [Javascript, 沸点工作室]
+excerpt: 原生代码实现轮播图，这里并没有什么特别的内容，前人已经总结的很好了，仅仅是用来自己记录一下。
 comments: true
 ---
 

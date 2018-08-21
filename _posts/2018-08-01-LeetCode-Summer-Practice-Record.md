@@ -3,6 +3,7 @@ layout: post
 title: LeetCode 暑期练习记录
 categories: [LeetCode题解]
 tags: [数据结构与算法, 题解, LeetCode, 沸点工作室]
+excerpt: 一些精简的思路和代码，没有难度的练习
 creativecommons: true
 comments: true
 ---

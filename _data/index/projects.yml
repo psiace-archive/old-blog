@@ -1,4 +1,9 @@
 - name: PsiACE.Me
   descr: "A Personal Blog, Resume & Projects' Presentation."
   image:
-  website: http://PsiACE.Me
+  website: https://PsiACE.Me
+
+- name: 开放数据结构
+  descr: "Open Data Structures 是由 Pat Morin 撰写的数据结构的入门指南。此处为中文译制版。工作仍在进行中"
+  image:
+  website: https://open-books.PsiACE.Me/ods-cn
