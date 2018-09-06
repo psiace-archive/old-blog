@@ -50,6 +50,6 @@ codes ends
 
 打开 DOSBox，在命令行依次执行 masm hello.asm、link hello.obj 以及 hello.exe，如果配置成功，你将看到如下图所示结果：
 
-![masm-dosbox](../src/learnnote/masm-dosbox.png)
+![masm-dosbox](https://raw.githubusercontent.com/PsiACE/psiace.github.io/master/src/learnnote/masm-dosbox.png)
 
 这意味着我们的 MASM 学习环境已经配置成功了。
