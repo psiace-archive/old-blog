@@ -53,3 +53,13 @@ codes ends
 ![masm-dosbox](https://raw.githubusercontent.com/PsiACE/psiace.github.io/master/src/learnnote/masm-dosbox.png)
 
 这意味着我们的 MASM 学习环境已经配置成功了。
+
+---
+9 月 24 日补充：
+
+关于 ~/.dosbox/dosbox-0.74.conf 的设置： `MOUNT c path/to/your/folder` 是指定 C 盘的位置，所以完全可以用其他位置来代替。`set PATH= %PATH%;c:\;` 一句设定了环境变量。
+
+关于 DEBUG 程序：直接放置到 C 盘目录之下即可，输入 debug 即可运行。
+
+关于下载：可以在 http://www.phatcode.net 找到相关内容。下载后直接解压，然后找出你所需要的内容放置在 C 盘下即可。
+---
